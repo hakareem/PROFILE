@@ -1,0 +1,301 @@
+/* custom google font */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.background-page {
+  height: 100vh;
+  width: 100%;
+  background-image: url(1s.jpg);
+  background-size: cover;
+}
+
+.nav-bar {
+  height: 9vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar h2 {
+  font-size: 35px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.nav-bar ul li a:hover {
+  color: rgba(18, 2, 245, 0.527);
+  font-weight: bold;
+}
+
+.main-content {
+  position: absolute;
+  left: 20%;
+  top: 47%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 65px;
+  margin: 15px 0px 15px;
+  color: rgb(24, 23, 23);
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 65px;
+  margin: 15px 0px 15px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+span {
+  color: #350bf0;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 400;
+}
+
+h4 {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 10px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #ffffff;
+  padding: 13px 30px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  color: rgb(7, 7, 7);
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: absolute;
+  height: 180px;
+  width: 60px;
+  background-color: #fff;
+  border-radius: 10px;
+  top: 30%;
+  right: 30px;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px auto;
+}
+
+.text {
+  background-color: #ffffff;
+  height: 100%;
+  min-height: 0px;
+  margin-right: 5px;
+  line-height: 0;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 0 0 5px;
+  overflow: hidden;
+}
+
+.icon {
+  height: 100%;
+  min-width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.icon i {
+  color: #000000;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.box:hover .icon {
+  background-color: #000000;
+}
+
+.box:hover .icon i {
+  color: rgb(255, 255, 255);
+}
+
+.box:hover .text {
+  min-width: 120px;
+}
+
+/* this is the focus section */
+.theme {
+  background-color: #000;
+}
+
+.theme .title {
+  color: rgb(0, 0, 0);
+}
+
+.focus-text {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+}
+
+.focus {
+  color: #fff;
+  background-color: #111;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  transition: all 300ms ease-in-out;
+}
+
+.focus span {
+  color: rgb(7, 173, 250);
+  font-size: 2rem;
+  transition: all 300ms ease-in-out;
+}
+
+.focus h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.focus p {
+  font-size: 1rem;
+  color: #f1f1f1;
+}
+
+.focus:hover {
+  background-color: rgb(3, 29, 90);
+}
+
+.service:hover span {
+  color: #fff;
+}
+
+/* this is the projects section */
+
+.title {
+  margin: 2rem 0 7rem 0;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 2rem;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+
+.title h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(7, 71, 248);
+  width: 90%;
+  height: 0.4rem;
+  z-index: 1;
+}
+.project {
+  color: rgb(12, 12, 12);
+  padding: 3rem;
+  text-align: center;
+  /* border-radius: 1rem; */
+  /* border-bottom: 1px solid transparent; */
+  display: flex;
+  /* width: 90vw; */
+  /* height: 30vh; */
+  background: linear-gradient(-10deg, #000000, #000000, #000000, #000000);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* .project:hover {
+  background-color: rgb(252, 252, 253);
+} */
+
+.project .img-cover {
+  overflow: hidden;
+  border-radius: 100%;
+  border: 4px solid rgb(255, 255, 255);
+  height: 9rem;
+  width: 9rem;
+  margin: 0 auto;
+  transition: all 300ms ease-in-out;
+}
+
+.project .img-cover img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.project h3 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.project p {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  margin: 0 auto 1rem auto;
+}
